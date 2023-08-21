@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+        "*": ["*", "src/*"]
+      },
+      "jsx": "react",
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "strict": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "./build",
+      "typeRoots": ["./src", "./node_modules/@types"],
+      "types": ["node", "react", "react-dom"],
+    },
+    "include": ["src/**/*.ts","src/**/*.d.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx","./declarations.d.ts"],
+    "exclude": ["node_modules"]
+  }
+  
+  
