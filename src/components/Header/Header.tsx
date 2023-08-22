@@ -21,7 +21,7 @@ const Trail: React.FC<TrailProps> = ({ children }) => {
 
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
-    config: { mass: 5, tension: 2000, friction: 200 },
+    config: { mass: 10, tension: 1000, friction: 200 }, //velocidades
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
     height: open ? 110 : 0,
