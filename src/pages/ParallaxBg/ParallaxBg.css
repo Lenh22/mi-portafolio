@@ -1,0 +1,15 @@
+.Parallax_page_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Parallax_earth {
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    pointer-events: 'none';
+}
+.Parallax_card {
+    background-size: '80%';
+    background-position: 'center';
+}

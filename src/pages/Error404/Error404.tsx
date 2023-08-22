@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useTrail, a } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
 
-import styles from "./Header.module.css";
-import Nube from "components/Nube/Nube";
+import  "./Error404.css";
 
 interface TrailProps {
   children: React.ReactNode;
@@ -31,7 +30,7 @@ const Trail: React.FC<TrailProps> = ({ children }) => {
   return (
     <div ref={ref}>
       {trail.map(({ height, ...style }, index) => (
-        <a.div key={index} className={styles.trailsText} style={style}>
+        <a.div key={index} className="trailsText" style={style}>
           <a.div style={{ height }}>{items[index]}</a.div>
         </a.div>
       ))}
@@ -39,15 +38,13 @@ const Trail: React.FC<TrailProps> = ({ children }) => {
   );
 };
 
-export default function Header() {
+export default function Error404() {
   return (
-    <div id="inicio" className={styles.container}>
+    <div className="container">
       <Trail>
-        <span className={styles.Header_letra_hover}>Hola</span>
-        <span>Soy Len</span>
-        <span>Tec. Desarrollo web</span>
+        <span>ERROR 404</span>
+        <span>Página no encontrada :(</span>
       </Trail>
-      <Nube/>
     </div>
   );
 }

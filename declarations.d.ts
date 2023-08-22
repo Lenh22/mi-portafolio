@@ -13,6 +13,11 @@ declare module '*.avif' {
   const src: string;
   export default src;
 }
+declare module 'service/*' {
+  const data: Array<any>;
+  export default data;
+}
+
 
 declare module '*.bmp' {
   const src: string;
