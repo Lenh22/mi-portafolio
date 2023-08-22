@@ -1,0 +1,25 @@
+.Parallax_page_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Parallax_earth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.Parallax_card {
+    background-size: 80%;
+    background-position: center;
+}
+.Parallax_estrellas{
+    background-image: url(../../assets/img-parallax/stars.svg);
+    inset:0px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    will-change:transform;
+    width: 100%;
+    
+    transform: translate3d(0px,0px,0px);
+}

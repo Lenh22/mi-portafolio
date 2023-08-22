@@ -1,24 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTrail, a } from "@react-spring/web";
+import { useInView } from "react-intersection-observer";
 
 import styles from "./Header.module.css";
+import Nube from "../Nube/Nube";
 
 interface TrailProps {
-  open: boolean;
   children: React.ReactNode;
 }
 
-const Trail: React.FC< TrailProps > = ({open,children,}) => {
+const Trail: React.FC<TrailProps> = ({ children }) => {
+  const [open, setOpen] = useState(false);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    setOpen(inView);
+  }, [inView]);
+
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
-    config: { mass: 5, tension: 2000, friction: 200 },
+    config: { mass: 10, tension: 1000, friction: 200 }, //velocidades
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
     height: open ? 110 : 0,
     from: { opacity: 0, x: 20, height: 0 },
   });
+
   return (
-    <div>
+    <div ref={ref}>
       {trail.map(({ height, ...style }, index) => (
         <a.div key={index} className={styles.trailsText} style={style}>
           <a.div style={{ height }}>{items[index]}</a.div>
@@ -29,15 +40,14 @@ const Trail: React.FC< TrailProps > = ({open,children,}) => {
 };
 
 export default function Header() {
-  const [open, set] = useState(true);
   return (
-    <div className={styles.container} onClick={() => set((state) => !state)}>
-      <Trail open={open}>
-        <span>Hola</span>
-        <span>Soy Len</span>
-        <p>Tec. Desarrollo web</p>
-        <span>Sit</span>
+    <div id="inicio" className={styles.container}>
+      <Trail>
+          <span>Hola,</span>
+          <span>soy Len</span>
+          <span className={styles.Header_subtitulo}>Tec. Desarrollo web</span>
       </Trail>
+      <Nube />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import nubeBlancaLogo from '../../assets/img/pacNubeB.png';
 
 export default function Nube() {
   return (
-    <div id="nubeLluvia" className="col" style={{background:"blue"}}>
+    <div id="nubeLluvia" className="col">
       <div className="text-center d-flex justify-content-center">
         <img
           src={nubeGris}
