@@ -1,5 +1,6 @@
 import Nube from '../assets/img/nubeB.png';
 import Nube2 from '../assets/img-parallax/cloud.svg';
+import estrellas from '../assets/img-parallax/stars.svg';
 const nubesData = [
   {
     offset: 1,
@@ -49,4 +50,34 @@ const nubesData = [
   }
 ];
 
-export default nubesData;
+const parallaxLayersData = [
+  {
+    id: 1,
+    offset: 1,
+    speed: 1,
+    style: { backgroundColor: '#805E73' }
+  },
+  {
+    id: 2,
+    offset: 2,
+    speed: 1,
+    style: { backgroundColor: 'black' }
+  },
+  {
+    id: 3,
+    offset: 3,
+    speed: 1,
+    style: { backgroundColor: '#87BCDE' }
+  },
+  {
+    id: 4,
+    offset: 0,
+    speed: 0,
+    factor: 3,
+    style: {
+      backgroundImage: estrellas,
+      backgroundSize: 'cover'
+    }
+  }
+];
+export default{nubesData, parallaxLayersData}

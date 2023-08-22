@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import './ParallaxBg.css'
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import Nube from '../../assets/img/nubeB.png';
-import Estrellas from '../../assets/img-parallax/stars.svg';
-import Navbar from 'components/NavBar/NavBar';
-import Header from 'components/Header/Header';
-import SobreMi from 'components/SobreMi/SobreMi';
-import Proyectos from 'components/Proyectos/Proyectos';
-import Contacto from 'components/Contacto/Contacto';
+// import Estrellas from '../../assets/img-parallax/stars.svg';
+import Navbar from '../../components/NavBar/NavBar';
+import Header from '../../components/Header/Header';
+import SobreMi from '../../components/SobreMi/SobreMi';
+import Proyectos from '../../components/Proyectos/Proyectos';
+import Contacto from '../../components/Contacto/Contacto';
 // Little helpers ...
 const url = (name: string, wrap = false) =>
   `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
@@ -61,32 +61,18 @@ export default function ParallaxBg() {
         <ParallaxLayer
           offset={3.5}
           speed={-0.4}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            pointerEvents: 'none',
-          }}>
+          className='Parallax_page_center'>
           <img src={url('earth')} style={{ width: '60%' }} />
         </ParallaxLayer>
     {/* Cards */}
         <ParallaxLayer
           offset={3}
           speed={-0.3}
-          style={{
-            backgroundSize: '80%',
-            backgroundPosition: 'center',
-            backgroundImage: url('clients', true),
-          }}
+          className='Parallax_page_center'
         >
         </ParallaxLayer>
     {/* pag 0 */}
-        <ParallaxLayer id='inicio'  offset={0} speed={0.1} onClick={() => parallax.current.scrollTo(1)}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
+        <ParallaxLayer id='inicio'  offset={0} speed={0.1} onClick={() => parallax.current.scrollTo(1)}>
           {/* <img src={url('server')} style={{ width: '20%' }} /> */}
           <Header/>
         </ParallaxLayer>

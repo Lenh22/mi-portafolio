@@ -3,7 +3,7 @@ import { useTrail, a } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
 
 import styles from "./Header.module.css";
-import Nube from "components/Nube/Nube";
+import Nube from "../Nube/Nube";
 
 interface TrailProps {
   children: React.ReactNode;
@@ -16,7 +16,7 @@ const Trail: React.FC<TrailProps> = ({ children }) => {
   });
 
   useEffect(() => {
-    setOpen(inView); // Actualiza el estado cuando el componente entra y sale de la vista
+    setOpen(inView);
   }, [inView]);
 
   const items = React.Children.toArray(children);
@@ -43,11 +43,11 @@ export default function Header() {
   return (
     <div id="inicio" className={styles.container}>
       <Trail>
-        <span className={styles.Header_letra_hover}>Hola</span>
-        <span>Soy Len</span>
-        <span>Tec. Desarrollo web</span>
+          <span>Hola,</span>
+          <span>soy Len</span>
+          <span className={styles.Header_subtitulo}>Tec. Desarrollo web</span>
       </Trail>
-      <Nube/>
+      <Nube />
     </div>
   );
 }
