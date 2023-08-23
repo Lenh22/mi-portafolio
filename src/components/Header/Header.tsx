@@ -24,7 +24,7 @@ const Trail: React.FC<TrailProps> = ({ children }) => {
     config: { mass: 10, tension: 1000, friction: 200 }, //velocidades
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
-    height: open ? 110 : 0,
+    height: open ? 90 : 0,
     from: { opacity: 0, x: 20, height: 0 },
   });
 
@@ -41,11 +41,11 @@ const Trail: React.FC<TrailProps> = ({ children }) => {
 
 export default function Header() {
   return (
-    <div id="inicio" className={styles.container}>
+    <div id={styles.inicio} className={styles.container}>
       <Trail>
           <span>Hola,</span>
           <span>soy Len</span>
-          <span className={styles.Header_subtitulo}>Tec. Desarrollo web</span>
+          <span className={styles.subtitulo}>Tec. Desarrollo web</span>
       </Trail>
       <Nube />
     </div>

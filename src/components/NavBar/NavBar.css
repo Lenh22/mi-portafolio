@@ -1,0 +1,9 @@
+.Navbar_container{
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index:9;
+}
+.Navbar {
+    position: sticky;
+}

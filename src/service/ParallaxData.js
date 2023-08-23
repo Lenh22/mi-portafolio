@@ -14,15 +14,6 @@ export const nubesData = [
     ]
   },
   {
-    offset: 1.75,
-    speed: 0.5,
-    style: { opacity: 0.1 },
-    elements: [
-      { src: Nube2, width: '20%', marginLeft: '70%' },
-      { src: Nube, width: '20%', marginLeft: '40%' }
-    ]
-  },
-  {
     offset: 1,
     speed: 0.2,
     style: { opacity: 0.2 },
@@ -42,12 +33,39 @@ export const nubesData = [
     ]
   },
   {
+    offset: 1.75,
+    speed: 0.5,
+    style: { opacity: 0.1 },
+    elements: [
+      { src: Nube2, width: '20%', marginLeft: '70%' },
+      { src: Nube, width: '20%', marginLeft: '40%' }
+    ]
+  },
+  {
     offset: 2.6,
     speed: 0.4,
     style: { opacity: 0.6 },
     elements: [
       { src: Nube, width: '20%', marginLeft: '5%' },
       { src: Nube2, width: '15%', marginLeft: '75%' }
+    ]
+  },
+  {
+    offset: 3,
+    speed: 0.5,
+    style: { opacity: 0.1 },
+    elements: [
+      { src: Nube, width: '15%', marginLeft: '20%' },
+      { src: Nube2, width: '20%', marginLeft: '45%' }
+    ]
+  },
+  {
+    offset: 3.2,
+    speed: 0.3,
+    style: { opacity: 0.6 },
+    elements: [
+      { src: Nube, width: '15%', marginLeft: '10%' },
+      { src: Nube2, width: '10%', marginLeft: '65%' }
     ]
   }
 ];

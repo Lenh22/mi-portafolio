@@ -55,6 +55,11 @@
   }
 }
 
+.nube_animacion_edit {
+  animation: fadeIn;
+  animation-duration: 3.5s;
+}
+
 .desvanece:hover {
   opacity: 0;
   transition: 3s;
@@ -156,4 +161,48 @@
 
 .p-absolute {
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  #lienzo {
+    width: 120px;
+  }
+
+  #nubeBlanca {
+    width: 50%;
+  }
+
+  #nubeGris {
+    width: 80%;
+  }
+
+  .efectoCaida>p {
+    margin-bottom: 0em;
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+
+  @-webkit-keyframes burbujas {
+    0% {
+      top: 10;
+      opacity: 100%;
+    }
+
+    100% {
+      top: 200px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes burbujas {
+    0% {
+      top: 0;
+      opacity: 100%;
+    }
+
+    100% {
+      top: 200px;
+      opacity: 0;
+    }
+  }
 }
