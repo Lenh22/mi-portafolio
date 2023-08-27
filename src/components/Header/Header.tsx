@@ -42,11 +42,13 @@ const Trail: React.FC<TrailProps> = ({ children }) => {
 export default function Header() {
   return (
     <div id={styles.inicio} className={styles.container}>
-      <Trail>
+      <div className={styles.trailsText_container}>
+        <Trail>
           <span>Hola,</span>
           <span>soy Len</span>
           <span className={styles.subtitulo}>Tec. Desarrollo web</span>
-      </Trail>
+        </Trail>
+      </div>
       <Nube />
     </div>
   );

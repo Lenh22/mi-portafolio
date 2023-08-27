@@ -1,26 +1,40 @@
-import { useRef } from 'react';
 import './NavBar.css';
-import { IParallax } from '@react-spring/parallax';
+import nube from '../../assets/img/nube-navbar.svg';
+import { BsPinAngleFill, BsPinAngle} from 'react-icons/bs';
+
+import { useState } from 'react';
 
 interface NavBarProps {
   parallax: React.RefObject<any>;
 }
 
 const NavBar: React.FC<NavBarProps> = ({ parallax }) => {
+  const [navbarUp, setNavbarUp] = useState('');
+  
   const scrollToPage = (pageIndex: number) => {
     parallax.current.scrollTo(pageIndex);
   };
 
+  const scrollUp = () => {
+    if(navbarUp==''){
+      setNavbarUp('Navbar_up')
+    }
+    else setNavbarUp('');
+  };
+  const PinIcon = navbarUp === '' ? BsPinAngleFill : BsPinAngle;
   return (
-    <div className="Navbar_container">
+    <div className={`Navbar_container ${navbarUp}`}>
       <nav className="Navbar">
-        Esto es el Navbar
-        <ul>
-          <li><a onClick={() => scrollToPage(0)}>Inicio</a></li>
-          <li><a onClick={() => scrollToPage(1)}>Sobre Mi</a></li>
-          <li><a onClick={() => scrollToPage(2)}>Proyecto</a></li>
-          <li><a onClick={() => scrollToPage(3)}>Contacto</a></li>
-        </ul>
+        <div className='Navbar_listado'>
+          <p onClick={() => scrollToPage(0)}>Inicio</p>
+          <p onClick={() => scrollToPage(1)}>Sobre Mi</p>
+          <p onClick={() => scrollToPage(2)}>Proyecto</p>
+          <p onClick={() => scrollToPage(3)}>Contacto</p>
+        </div>
+          <div className='Navbar_boton' onClick={scrollUp}><PinIcon/></div>
+        <div className='Navbar_nube_container'>
+          <img className='Navbar_nube' src={nube} alt='navbar'/>
+        </div>
       </nav>
     </div>
   );

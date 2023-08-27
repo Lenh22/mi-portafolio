@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './ParallaxBg.css'
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import {nubesData, parallaxLayersData} from '../../service/ParallaxData.js';
-import earth from '../../assets/img-parallax/earth.svg';
+import earth from '../../assets/img-parallax/earth-america.svg';
 import satelite from '../../assets/img-parallax/satellite4.svg';
 import estrellas from '../../assets/img-parallax/stars.svg';
 import luna from '../../assets/img-parallax/moon.png';
@@ -53,42 +53,37 @@ export default function ParallaxBg() {
 
       {/* pag 0 */}
       <section id='inicio'>
-          <ParallaxLayer id='inicio'  offset={0} speed={0.1} onClick={() => parallax.current.scrollTo(1)}
+          <ParallaxLayer id='inicio'  offset={0} speed={0.1}
             style={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-            {/* <img src={url('server')} style={{ width: '20%' }} /> */}
             <Header/>
           </ParallaxLayer>
       </section>
       {/* pag 1 */}
       <section id='sobre-mi'>
-          <ParallaxLayer id='sobre-mi' offset={1} speed={0.1} onClick={() => parallax.current.scrollTo(2)}
+          <ParallaxLayer id='sobre-mi' offset={1} speed={0.1}
           className='Parallax_page_center'>
-            {/* <img src={url('bash')} style={{ width: '40%' }} /> */}
             <SobreMi/>
           </ParallaxLayer>
       </section>
       {/* pag 2 */}
       <section id='proyectos'>
-          <ParallaxLayer id='proyectos'  offset={2} speed={0.2} onClick={() => parallax.current.scrollTo(3)}
+          <ParallaxLayer id='proyectos'  offset={2} speed={0.2}
             className='Parallax_page_center'>
-            {/* <img src={url('clients-main')} style={{ width: '40%' }} /> */}
             <Proyectos/>
           </ParallaxLayer>
       </section>
       {/* pag 3 */}
       <section id='contacto'>
-          <ParallaxLayer offset={3} speed={-0} onClick={() => parallax.current.scrollTo(0)}
+          <ParallaxLayer offset={3} speed={-0}
             className='Parallax_page_center'>
-            {/* <img src={url('clients-main')} style={{ width: '40%' }} /> */}
             <Contacto/>
           </ParallaxLayer>
       </section>
       </Parallax>
-      
     </div>
   )
 }

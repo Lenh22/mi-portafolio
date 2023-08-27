@@ -1,3 +1,7 @@
+.trailsText_container{
+  width: 70%;
+}
+
 .trailsText {
   font-family: fantasy;
   position: relative;
