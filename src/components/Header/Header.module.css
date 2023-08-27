@@ -1,36 +1,59 @@
-.trailsText {
-    font-family: fantasy;
-    position: relative;
-    width: 100%;
-    height: 105px;
-    line-height: 80px;
-    color: white;
-    font-size: 6em;
-    font-weight: 100;
-    letter-spacing: -0.02em;
-    will-change: transform, opacity;
-    overflow: hidden;
-  }
-  
-  .trailsText > div {
-    padding: var(--paddin-global);
-    overflow: hidden;
-  }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .Header_letra_hover:hover{
-    -webkit-text-stroke: 1px white;
-    color: #202020;
-    transition: .5s ease-in-out;
-  }
+.trailsText_container{
+  width: 70%;
+}
 
-  .Header_subtitulo {
-    font-size: 4rem;
+.trailsText {
+  font-family: fantasy;
+  position: relative;
+  width: 100%;
+  height: auto;
+  line-height: 80px;
+  color: white;
+  font-size: 6em;
+  font-weight: 100;
+  letter-spacing: -0.02em;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.trailsText>div {
+  overflow: hidden;
+}
+
+.container {
+  padding: var(--paddin-global);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.letra_hover:hover {
+  -webkit-text-stroke: 1px white;
+  color: #202020;
+  transition: .5s ease-in-out;
+}
+
+.subtitulo {
+  font-size: 4rem;
+}
+#inicio{
+  padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .container{
+    text-align: center;
+    flex-direction: column;
   }
-  
+  .trailsText {
+    font-size: 3em;
+  }
+  .subtitulo {
+    font-size: 2rem;
+  }
+  .trailsText div {
+    height: min-content !important;
+  }
+}

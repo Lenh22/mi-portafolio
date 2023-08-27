@@ -1,0 +1,17 @@
+.Sobre_mi_container{
+margin: 40px;
+}
+.Sobre_mi_header{
+    display: flex;
+    justify-content: space-between;
+}
+.Sobre_mi_titulo{
+    font-size: 32px;
+    color: white;
+}
+.Sobre_mi_descripcion{
+    padding: 40px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: white;
+}
