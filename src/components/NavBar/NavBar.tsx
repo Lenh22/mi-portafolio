@@ -1,6 +1,5 @@
 import './NavBar.css';
 import nube from '../../assets/img/nube-navbar.svg';
-import { BsPinAngleFill, BsPinAngle} from 'react-icons/bs';
 
 import { useState } from 'react';
 
@@ -9,7 +8,6 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ parallax }) => {
-  const [navbarUp, setNavbarUp] = useState('');
   
   const scrollToPage = (pageIndex: number) => {
     parallax.current.scrollTo(pageIndex);
