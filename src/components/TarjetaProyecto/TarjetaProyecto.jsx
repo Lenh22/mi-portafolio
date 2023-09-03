@@ -35,40 +35,21 @@ export default function TarjetaProyecto() {
         modules={[EffectCoverflow, Navigation]}
         className="mySwiper"
       >
-         <SwiperSlide className='TarjProyecto_container'>
+        <SwiperSlide className='TarjProyecto_container'>
           <div className='TarjProyecto_img_container'>
-          <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-1.jpg" />
           </div>
-          <div className='TarjProyecto_header'>
-            <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
-            <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
-            <button className='btn-primary'>Ver mas</button>
+          <div className='h-100'>
+            <div className='TarjProyecto_header'>
+              <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
+              <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
+              <button className='btn-primary'>Ver mas</button>
+            </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
         </SwiperSlide>
         <SwiperSlide className='TarjProyecto_container'>
           <div className='TarjProyecto_img_container'>
-          <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-2.jpg" />
           </div>
           <div className='TarjProyecto_header'>
             <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
@@ -78,7 +59,77 @@ export default function TarjetaProyecto() {
         </SwiperSlide>
         <SwiperSlide className='TarjProyecto_container'>
           <div className='TarjProyecto_img_container'>
-          <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div className='TarjProyecto_header'>
+            <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
+            <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
+            <button className='btn-primary'>Ver mas</button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='TarjProyecto_container'>
+          <div className='TarjProyecto_img_container'>
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div className='TarjProyecto_header'>
+            <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
+            <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
+            <button className='btn-primary'>Ver mas</button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='TarjProyecto_container'>
+          <div className='TarjProyecto_img_container'>
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div className='TarjProyecto_header'>
+            <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
+            <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
+            <button className='btn-primary'>Ver mas</button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='TarjProyecto_container'>
+          <div className='TarjProyecto_img_container'>
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div className='TarjProyecto_header'>
+            <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
+            <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
+            <button className='btn-primary'>Ver mas</button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='TarjProyecto_container'>
+          <div className='TarjProyecto_img_container'>
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div className='TarjProyecto_header'>
+            <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
+            <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
+            <button className='btn-primary'>Ver mas</button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='TarjProyecto_container'>
+          <div className='TarjProyecto_img_container'>
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          </div>
+          <div className='TarjProyecto_header'>
+            <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
+            <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
+            <button className='btn-primary'>Ver mas</button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='TarjProyecto_container'>
+          <div className='TarjProyecto_img_container'>
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
+          <div className='TarjProyecto_header'>
+            <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
+            <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
+            <button className='btn-primary'>Ver mas</button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='TarjProyecto_container'>
+          <div className='TarjProyecto_img_container'>
+            <img className='TarjProyecto_img' src="https://swiperjs.com/demos/images/nature-3.jpg" />
           </div>
           <div className='TarjProyecto_header'>
             <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
