@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -11,7 +10,7 @@ import 'swiper/css/effect-coverflow';
 import './TarjetaProyecto.css';
 
 // import required modules
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
 
 export default function TarjetaProyecto() {
   return (
@@ -20,7 +19,6 @@ export default function TarjetaProyecto() {
         effect={'coverflow'}
         grabCursor={true}
         loop={true}
-        // pagination={{ clickable: false }}
         navigation={true}
         centeredSlides={true}
         slidesPerView={'auto'}
