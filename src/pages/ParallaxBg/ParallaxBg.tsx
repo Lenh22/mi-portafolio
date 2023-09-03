@@ -72,7 +72,7 @@ export default function ParallaxBg() {
       {/* pag 2 */}
       <section id='proyectos'>
           <ParallaxLayer id='proyectos'  offset={2} speed={0.2}
-            className='Parallax_page_center'>
+            className=''>
             <Proyectos/>
           </ParallaxLayer>
       </section>
