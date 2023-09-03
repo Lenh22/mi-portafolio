@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mi-portafolio/static/css/main.ae47b1bd.css",
+    "main.js": "/mi-portafolio/static/js/main.45830931.js",
+    "static/js/787.ae0d8d37.chunk.js": "/mi-portafolio/static/js/787.ae0d8d37.chunk.js",
+    "static/media/code-wallpaper-14.jpg": "/mi-portafolio/static/media/code-wallpaper-14.e7238af73b30eb696c66.jpg",
+    "static/media/pacNubeB.png": "/mi-portafolio/static/media/pacNubeB.50c48d2dcd2ffcf112c3.png",
+    "static/media/moon.png": "/mi-portafolio/static/media/moon.93d1ddca665edaaf7150.png",
+    "static/media/nubeB.png": "/mi-portafolio/static/media/nubeB.d6e8c46567d6997d8453.png",
+    "static/media/nubeG.png": "/mi-portafolio/static/media/nubeG.9e01178ef83dff92991e.png",
+    "static/media/stars.svg": "/mi-portafolio/static/media/stars.9e9d9712c6e3673ab5b3e6b0539ffc20.svg",
+    "static/media/earth-america.svg": "/mi-portafolio/static/media/earth-america.f5446c90dbb7432088b2bf6d7f53556f.svg",
+    "static/media/satellite4.svg": "/mi-portafolio/static/media/satellite4.8c3d6c37457820d5fa3a51de708a1772.svg",
+    "static/media/nube-navbar.svg": "/mi-portafolio/static/media/nube-navbar.9267c61633224638283a482211fcfb79.svg",
+    "index.html": "/mi-portafolio/index.html",
+    "static/media/cloud.svg": "/mi-portafolio/static/media/cloud.ee4c9d85744d2bdd0eb50affc4b4f3f9.svg",
+    "main.ae47b1bd.css.map": "/mi-portafolio/static/css/main.ae47b1bd.css.map",
+    "main.45830931.js.map": "/mi-portafolio/static/js/main.45830931.js.map",
+    "787.ae0d8d37.chunk.js.map": "/mi-portafolio/static/js/787.ae0d8d37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae47b1bd.css",
+    "static/js/main.45830931.js"
+  ]
+}
