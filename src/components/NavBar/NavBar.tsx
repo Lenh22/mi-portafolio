@@ -15,15 +15,8 @@ const NavBar: React.FC<NavBarProps> = ({ parallax }) => {
     parallax.current.scrollTo(pageIndex);
   };
 
-  const scrollUp = () => {
-    if(navbarUp==''){
-      setNavbarUp('Navbar_up')
-    }
-    else setNavbarUp('');
-  };
-  const PinIcon = navbarUp === '' ? BsPinAngleFill : BsPinAngle;
   return (
-    <div className={`Navbar_container ${navbarUp}`}>
+    <div className={`Navbar_container Navbar_up`}>
       <nav className="Navbar">
         <div className='Navbar_listado'>
           <p onClick={() => scrollToPage(0)}>Inicio</p>
@@ -31,7 +24,6 @@ const NavBar: React.FC<NavBarProps> = ({ parallax }) => {
           <p onClick={() => scrollToPage(2)}>Proyecto</p>
           <p onClick={() => scrollToPage(3)}>Contacto</p>
         </div>
-          <div className='Navbar_boton' onClick={scrollUp}><PinIcon/></div>
         <div className='Navbar_nube_container'>
           <img className='Navbar_nube' src={nube} alt='navbar'/>
         </div>

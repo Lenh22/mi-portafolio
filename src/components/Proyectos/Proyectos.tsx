@@ -1,10 +1,10 @@
-import React from "react";
-
+import TarjetaProyecto from "../TarjetaProyecto/TarjetaProyecto";
+import './Proyectos.css'
 export default function Proyectos(){
-    return(<div id="proyectos">
+    return(<>
+    <div className="Proyectos_header">
         <h2 className="Proyectos_titulo">Mis proyectos</h2>
-        <div className="Proyectos_card_container">
-            Box proyectos swiper
-        </div>
-    </div>)
+    </div>
+        <TarjetaProyecto/>
+    </>);
 }

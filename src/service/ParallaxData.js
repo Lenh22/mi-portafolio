@@ -81,7 +81,7 @@ export const parallaxLayersData = [
     id: 2,
     offset: 2,
     speed: 1,
-    style: { backgroundColor: 'black' }
+    style: { backgroundColor: '#fffff' }
   },
   {
     id: 3,
