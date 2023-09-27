@@ -3,7 +3,7 @@ import './Nube.css';
 import nubeGris from '../../assets/img/nubeG.png';
 import nubeBlanca from '../../assets/img/nubeB.png';
 import nubeBlancaLogo from '../../assets/img/pacNubeB.png';
-import { burbujasData, imagenesData } from '../../service/NubeData';
+import { burbujasData } from '../../service/NubeData';
 
 export default function Nube() {
   return (
