@@ -1,8 +1,6 @@
 import './NavBar.css';
 import nube from '../../assets/img/nube-navbar.svg';
 
-import { useState } from 'react';
-
 interface NavBarProps {
   parallax: React.RefObject<any>;
 }
