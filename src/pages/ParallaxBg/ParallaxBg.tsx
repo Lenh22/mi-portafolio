@@ -38,8 +38,8 @@ export default function ParallaxBg() {
       {/* Nubes */}
           {nubesData.map((nube, index) => (
             <ParallaxLayer key={index} offset={nube.offset} speed={nube.speed} style={nube.style}>
-              {nube.elements.map((element: { src: string | undefined; width: any; marginLeft: any; }) => (
-            <img src={element.src} style={{ display: 'block', width: element.width, marginLeft: element.marginLeft }} />
+              {nube.elements.map((element: { src: string | undefined; width: any; marginLeft: any; }, index) => (
+            <img key={index} src={element.src} style={{ display: 'block', width: element.width, marginLeft: element.marginLeft }} />
               ))}
             </ParallaxLayer>
           ))}
