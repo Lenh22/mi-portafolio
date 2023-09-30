@@ -15,3 +15,17 @@ margin: 40px;
     border-radius: 20px;
     background-color: white;
 }
+
+@media (max-width:768px) {
+    .Sobre_mi_header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: 10px;
+        z-index: 10;
+    }
+    .Sobre_mi_titulo{
+        text-align: center;
+    }
+}
