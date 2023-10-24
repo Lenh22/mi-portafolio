@@ -11,6 +11,7 @@ import './TarjetaProyecto.css';
 
 // import required modules
 import { EffectCoverflow, Navigation } from 'swiper/modules';
+import Btn from '../Btn/Btn';
 
 export default function TarjetaProyecto() {
   return (
@@ -41,7 +42,8 @@ export default function TarjetaProyecto() {
             <div className='TarjProyecto_header'>
               <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
               <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
-              <button className='btn-primary'>Ver mas</button>
+              <Btn className='' link='' type='button'>Ver mas</Btn>
+              <p>Estilo 1</p>
             </div>
           </div>
         </SwiperSlide>
@@ -52,7 +54,8 @@ export default function TarjetaProyecto() {
           <div className='TarjProyecto_header'>
             <h4 className='TarjProyecto_titulo'>Titulo proyecto</h4>
             <p className='TarjProyecto_descripcion'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum voluptatibus voluptatum labore quod dolor eum nulla enim inventore voluptas consequatur.</p>
-            <button className='btn-primary'>Ver mas</button>
+            <Btn className='' link='' type='button'>Ver mas</Btn>
+            <p>Estilo 2</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='TarjProyecto_container'>
