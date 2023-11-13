@@ -1,0 +1,43 @@
+.Btn {
+    padding: 7px 20px;
+    border-radius: 25px;
+    border: 0px;
+    font-size: var(--descripcion);
+    transition: 0.2s;
+}
+
+.Btn_1 {
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.Btn_1:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: inherit;
+}
+
+.Btn_1:active {
+    border: 1px solid black;
+    color: white;
+    background-color: inherit;
+}
+
+.Btn_2 {
+    border: 1px solid white;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.Btn_2:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: inherit;
+}
+
+.Btn_2:active {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}

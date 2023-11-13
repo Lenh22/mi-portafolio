@@ -1,6 +1,12 @@
-:root{
-  --paddin-global: 0px 50px;
+:root {
+  --padding-global: 0px 50px;
+  --padding-global-sm: 0px 10px;
+  --w-img: 200px;
+  --h-img: 200px;
+  --transicion: 0.2s;
+  --descripcion: 16px;
 }
+
 body {
   margin: 0px;
   font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,9 +21,39 @@ code {
     monospace;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: fantasy;
   font-weight: 100;
   letter-spacing: -0.02em;
   line-height: 80px;
+}
+
+.layout {
+  padding: var(--padding-global);
+}
+
+.fondo-desenfocado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  backdrop-filter: blur(17px);
+}
+
+.descripcion {
+  font-size: var(--descripcion);
+  line-height: 1.5;
+}
+
+@media (max-width:768px) {
+  .layout {
+    padding: var(--padding-global-sm);
+  }
 }

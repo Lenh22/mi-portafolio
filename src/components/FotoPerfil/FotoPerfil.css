@@ -1,9 +1,19 @@
-.Foto_perfil_container{}
-.Foto_perfil_img_container{
-    width: 200px;
-    height: 200px;
+.Foto_perfil_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--w-img) + 10px);
+    height: calc(var(--h-img) + 10px);
+    border-radius: 50%;
+    border: 2px solid white;
 }
-.Foto_perfil_img{
+
+.Foto_perfil_img_container {
+    width: var(--w-img);
+    height: var(--h-img);
+}
+
+.Foto_perfil_img {
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -11,7 +21,17 @@
 }
 
 @media (max-width:768px) {
-    .Foto_perfil_img_container{
+    .Foto_perfil_img_container {
         align-self: center;
+    }
+
+    .Foto_perfil_container {
+        width: calc(var(--w-img) - 55px);
+        height: calc(var(--h-img) - 55px);
+    }
+
+    .Foto_perfil_img_container {
+        width: calc(var(--w-img) - 70px);
+        height: calc(var(--h-img) - 70px);
     }
 }

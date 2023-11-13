@@ -21,7 +21,7 @@
 }
 
 .container {
-  padding: var(--paddin-global);
+  padding: var(--padding-global);
   display: flex;
   align-items: center;
   height: 100%;

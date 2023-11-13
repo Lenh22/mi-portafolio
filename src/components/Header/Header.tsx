@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTrail, a } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
-
+// Probando estilos con modulos
 import styles from "./Header.module.css";
 import Nube from "../Nube/Nube";
 
@@ -41,7 +41,7 @@ const Trail: React.FC<TrailProps> = ({ children }) => {
 
 export default function Header() {
   return (
-    <div id={styles.inicio} className={styles.container}>
+    <div id={styles.inicio} className={`${styles.container} layout`}>
       <div className={styles.trailsText_container}>
         <Trail>
           <span>Hola,</span>

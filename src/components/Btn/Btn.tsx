@@ -9,8 +9,10 @@ interface BtnProps {
 
 export default function Btn({ children, link, className, type }: BtnProps) {
   return (
-    <a href={link} className={`${className} Btn`}>
-      <button type={type}>{children}</button>
+    <a href={link} className={` Btn_a`}>
+      <button type={type} className={`${className} Btn`}>
+        {children}
+      </button>
     </a>
   );
 }
@@ -18,5 +20,6 @@ export default function Btn({ children, link, className, type }: BtnProps) {
 Btn.defaultProps = {
   titulo: "Boton",
   link: "#",
-  className: "",
+  className: "Btn_2",
+  children: "Boton",
 };
