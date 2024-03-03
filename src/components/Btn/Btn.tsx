@@ -1,25 +1,23 @@
 import "./Btn.css";
+import { BtnProps } from "../../interface/IBtn";
 
-interface BtnProps {
-  children: string;
-  link: string;
-  className?: string;
-  type?: "button";
-}
-
-export default function Btn({ children, link, className, type }: BtnProps) {
-  return (
-    <a href={link} className={` Btn_a`}>
-      <button type={type} className={`${className} Btn`}>
+export default function Btn({ children, link, className, onClick }: BtnProps) {
+  if (link) {
+    return (
+      <a href={link} className={`Btn ${className}`}>
+        {children}
+      </a>
+    );
+  } else {
+    return (
+      <button className={`Btn ${className}`} onClick={onClick}>
         {children}
       </button>
-    </a>
-  );
+    );
+  }
 }
 
 Btn.defaultProps = {
-  titulo: "Boton",
-  link: "#",
   className: "Btn_2",
   children: "Boton",
 };

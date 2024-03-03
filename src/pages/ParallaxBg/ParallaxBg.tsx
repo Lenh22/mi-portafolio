@@ -39,7 +39,7 @@ export default function ParallaxBg() {
           {nubesData.map((nube, index) => (
             <ParallaxLayer key={index} offset={nube.offset} speed={nube.speed} style={nube.style}>
               {nube.elements.map((element: { src: string | undefined; width: any; marginLeft: any; }, index) => (
-            <img key={index} src={element.src} style={{ display: 'block', width: element.width, marginLeft: element.marginLeft }} />
+            <img key={index} src={element.src} alt={`nube-${index}`} loading="lazy" style={{ display: 'block', width: element.width, marginLeft: element.marginLeft }} />
               ))}
             </ParallaxLayer>
           ))}
@@ -66,6 +66,7 @@ export default function ParallaxBg() {
       <section id='sobre-mi'>
           <ParallaxLayer id='sobre-mi' offset={1} speed={0.1}
           className='Parallax_page_center'>
+          <img src={estrellas} className='Parallax_estrellas ' alt='estrellas' style={{height:'auto'}}/>
             <SobreMi/>
           </ParallaxLayer>
       </section>

@@ -9,8 +9,8 @@ export const nubesData = [
     speed: 0.8,
     style: { opacity: 0.1 },
     elements: [
-      { src: Nube, width: '20%', marginLeft: '55%' },
-      { src: Nube, width: '10%', marginLeft: '15%' }
+      { src: Nube, width: '15%', marginLeft: '55%' },
+      // { src: Nube, width: '10%', marginLeft: '15%' }
     ]
   },
   {
@@ -18,8 +18,8 @@ export const nubesData = [
     speed: 0.2,
     style: { opacity: 0.2 },
     elements: [
-      { src: Nube2, width: '10%', marginLeft: '10%' },
-      { src: Nube, width: '20%', marginLeft: '75%' }
+      // { src: Nube2, width: '10%', marginLeft: '10%' },
+      { src: Nube, width: '15%', marginLeft: '75%' }
     ]
   },
   {
@@ -27,9 +27,9 @@ export const nubesData = [
     speed: -0.1,
     style: { opacity: 0.4 },
     elements: [
-      { src: Nube, width: '20%', marginLeft: '60%' },
-      { src: Nube, width: '25%', marginLeft: '30%' },
-      { src: Nube, width: '10%', marginLeft: '80%' }
+      // { src: Nube, width: '20%', marginLeft: '60%' },
+      { src: Nube, width: '20%', marginLeft: '30%' },
+      // { src: Nube, width: '10%', marginLeft: '80%' }
     ]
   },
   {
@@ -38,7 +38,7 @@ export const nubesData = [
     style: { opacity: 0.1 },
     elements: [
       { src: Nube2, width: '20%', marginLeft: '70%' },
-      { src: Nube, width: '20%', marginLeft: '40%' }
+      // { src: Nube, width: '20%', marginLeft: '40%' }
     ]
   },
   {
@@ -46,7 +46,7 @@ export const nubesData = [
     speed: 0.4,
     style: { opacity: 0.6 },
     elements: [
-      { src: Nube, width: '20%', marginLeft: '5%' },
+      // { src: Nube, width: '20%', marginLeft: '5%' },
       { src: Nube2, width: '15%', marginLeft: '75%' }
     ]
   },
@@ -56,7 +56,7 @@ export const nubesData = [
     style: { opacity: 0.1 },
     elements: [
       { src: Nube, width: '15%', marginLeft: '20%' },
-      { src: Nube2, width: '20%', marginLeft: '45%' }
+      // { src: Nube2, width: '20%', marginLeft: '45%' }
     ]
   },
   {
@@ -64,7 +64,7 @@ export const nubesData = [
     speed: 0.3,
     style: { opacity: 0.6 },
     elements: [
-      { src: Nube, width: '15%', marginLeft: '10%' },
+      // { src: Nube, width: '15%', marginLeft: '10%' },
       { src: Nube2, width: '10%', marginLeft: '65%' }
     ]
   }

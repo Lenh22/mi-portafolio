@@ -22,7 +22,7 @@
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.604);
     overflow: hidden;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(1px); */
 }
 
 .Sobre_mi_texto {
